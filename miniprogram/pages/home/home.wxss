@@ -1,0 +1,80 @@
+.bg-image {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.custom-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px; /* 导航栏默认高度 */
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1000;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.nav-bar-left {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.scroll-area {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.custom-button {
+  background-color: rgb(202, 100, 52);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 60px; /* 距离底部的距离 */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100; /* 确保按钮在scroll-view上方 */
+}
+
+.button-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.button-text {
+  font-size: 16px;
+}
+
+.log-item {
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.log-item:last-child {
+  padding-bottom: env(safe-area-inset-bottom);
+}

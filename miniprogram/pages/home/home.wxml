@@ -1,0 +1,35 @@
+<!--pages/home/home.wxml-->
+<image class="bg-image" mode="aspectFill" src="https://qiniu.aimissu.top/temporary/bg_launch.png" hidden="{{showScrollView}}"></image>
+
+<view class="custom-nav-bar">
+  <view class="nav-bar-left">
+    <image class="nav-bar-icon" src="/images/menu_icon.png" bindtap="onNavBarIconTap" style="margin-top: {{topIconDistance}}px;"></image>
+  </view>
+</view>
+<!--WXML示例代码-->
+<!-- <mp-half-screen-dialog 
+  bindbuttontap="buttontap"
+  show="{{show}}"
+  maskClosable="{{false}}" 
+  title="测试标题B" 
+  subTitle="测试标题B的副标题"
+  desc="辅助描述内容，可根据实际需要安排"
+  tips="辅助提示内容，可根据实际需要安排"
+  buttons="{{buttons}}"
+></mp-half-screen-dialog> -->
+<bottom-popup show="{{show}}"></bottom-popup>
+
+<view class="page-content" style="padding-top: {{navbar}}px;">
+  <scroll-view class="scroll-area" scroll-y hidden="{{!showScrollView}}">
+    <!-- 滚动视图内容 -->
+    <view class="log-item" wx:for="{{logs}}" wx:key="timeStamp">
+      {{index + 1}}. {{log.date}}
+    </view>
+  </scroll-view>
+  <button class="custom-button" bindtap="onButtonTap">
+    <image class="button-icon" src="/images/voice_icon.png"></image>
+    <text class="button-text">记录一下</text>
+  </button>
+</view>
+
+

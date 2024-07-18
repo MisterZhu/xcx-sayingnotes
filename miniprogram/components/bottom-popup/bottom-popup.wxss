@@ -1,0 +1,81 @@
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 1000;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bottom-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 40px;
+  padding: 10px;
+  width: calc(100% - 40px);
+  height: 40px !important;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  background-color: rgb(26, 25, 29);
+}
+.cancel-btn {
+  background-color: #666666;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  width: 90px !important; /* 固定宽度 */
+  height: 40px !important; /* 固定高度 */
+  position: absolute;
+  left: 10px; /* 距离父视图左侧边距 */
+  top: 10px; /* 距离父视图上方边距 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.finish-btn {
+  background-color: #dd765c;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  width: 90px !important; /* 固定宽度 */
+  height: 40px !important; /* 固定高度 */
+  position: absolute;
+  right: 10px; /* 距离父视图右侧边距 */
+  top: 10px; /* 距离父视图上方边距 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-text {
+  text-align: center;
+  width: 120px; /* 固定宽度 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* 文本过长时省略 */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px; /* 上方边距 */
+  line-height: 40px; /* 与按钮高度相同，垂直居中 */
+  color: #ffffff;
+
+}

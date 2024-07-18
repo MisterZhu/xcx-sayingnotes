@@ -1,0 +1,15 @@
+<!--components/bottom-popup/bottom-popup.wxml-->
+<!-- <view class="mask" hidden="{{!show}}" bindtap="hidePopup"></view> -->
+<view class="mask" hidden="{{!show}}"></view>
+
+<view class="popup" hidden="{{!show}}">
+  <view class="popup-content">
+    <!-- Add your content here -->
+    <view class="bottom-content">
+      <button class="cancel-btn" bindtap="pauseRecording">取消</button>
+      <text class="center-text">{{formattedTime}}/3:00</text>
+      <button class="finish-btn" bindtap="startRecording">完成</button>
+    </view>
+  </view>
+</view>
+
